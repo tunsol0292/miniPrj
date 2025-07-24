@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>레시피 공유</title>
+  <script defer src="/recipe.js"></script>
+  <link rel="stylesheet" href="/recipe.css" />
+</head>
+<body>
+  <main>
+    <h1>🍳레시피 등록🍳</h1>
+    <div>
+      <label for="title-input">레시피 명</label>
+      <input type="text" id="title-input" name="title" placeholder="레시피 이름을 적어주세요🫘" />
+    </div>
+    <div>
+      <label for="content-input">만드는 법</label>
+      <textarea id="content-input" name="content" placeholder="내용을 적어주세요.🫘"></textarea>
+    </div>
+    <div>
+      <label for="category-select">카테고리 번호</label>
+      <input type="number" id="category-select" name="categoryNo" min="1" max="4" />
+      <p>1: 한식, 2: 중식, 3: 양식, 4: 일식 입니다.</p>
+    </div>
+    <button type="button" id="insert-btn">등록</button>
+
+    <h2>레시피 목록</h2>
+    <label for="category-filter">카테고리 필터:</label>
+    <select id="category-filter">
+      <option value="0">전체</option>
+      <option value="1">한식</option>
+      <option value="2">중식</option>
+      <option value="3">양식</option>
+      <option value="4">일식</option>
+    </select>
+    <span> - 클릭하면 밑에 상세화면이 나옵니다.</span>
+    <br>
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>제목</th>
+          <th>카테고리</th>
+        </tr>
+      </thead>
+      <tbody id="recipe-list">
+        <!-- 레시피 출력 -->
+      </tbody>
+    </table>
+
+    <h2>상세보기</h2>
+    <input type="hidden" id="recipe-no" />
+    <div>
+      <label for="recipe-title">제목</label>
+      <input type="text" id="recipe-title" />
+    </div>
+    <div>
+      <label for="recipe-content">내용</label>
+      <textarea id="recipe-content" placeholder="내용을 입력하세요."></textarea>
+    </div>
+    <div>
+      <label for="recipe-category">카테고리</label>
+      <input type="number" id="recipe-category" min="1" max="4" />
+      <p>1: 한식, 2: 중식, 3: 양식, 4: 일식 입니다.</p>
+    </div>
+    <button type="button" id="update-btn">수정</button>
+    <button type="button" id="delete-btn">삭제</button>
+  </main>
+</body>
+</html>

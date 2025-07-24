@@ -1,0 +1,135 @@
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fffaf0;
+  color: #5a3e1b;
+  line-height: 1.8;
+  padding: 20px 20px 40px;
+  box-shadow: 0 0 25px rgba(90, 62, 27, 0.2);
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+h1, h2 {
+  color: #b35e17;
+  border-bottom: 3px solid #b35e17;
+  padding-bottom: 10px;
+  margin-bottom: 22px;
+  letter-spacing: 1.3px;
+  font-size: 18px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #7a512a;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #c79c5b;
+  border-radius: 10px;
+  background: #fff7e6;
+  color: #5a3e1b;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-height: 48px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+textarea {
+  min-height: 110px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #b35e17;
+  box-shadow: 0 0 10px #d8a34b88;
+  outline: none;
+  background: #fff9f2;
+}
+
+p {
+  margin-top: -8px;
+  margin-bottom: 18px;
+  color: #8f6f3f;
+  font-style: italic;
+  font-size: 15px;
+}
+
+button {
+  background-color: #b35e17;
+  border: none;
+  color: #fff7e6;
+  padding: 8px 18px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #8e480e;
+}
+
+#category-filter {
+  background-color: #fff7e6;
+  border: none;
+  color: #b35e17;
+  padding: 8px 18px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 35px;
+  color: #5a3e1b;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+thead th {
+  background-color: #c79c5b;
+  padding: 16px 14px;
+  border-bottom: 3px solid #b35e17;
+  text-align: left;
+  letter-spacing: 1px;
+  color: #3e2a0f;
+  font-size: 14px;
+}
+
+tbody tr {
+  cursor: pointer;
+  border-bottom: 1.5px solid #d4b97b;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #fff3d6;
+}
+
+tbody td {
+  padding: 14px 12px;
+  vertical-align: middle;
+  font-size: 13px;
+}
